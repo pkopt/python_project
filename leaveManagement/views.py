@@ -14,7 +14,7 @@ class employeeApi(APIView):
 
         if serializer.is_valid():
             serializer.save()
-            return Response({"Sucess": "leave apply  sucessfully"})
+            return Response({"Sucess": "Employee save Successfilly"})
 
         return Response(serializer.errors)
 
